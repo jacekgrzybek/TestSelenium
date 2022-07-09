@@ -1,5 +1,7 @@
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class firstTest {
@@ -9,5 +11,6 @@ public class firstTest {
         WebDriver driver = new ChromeDriver();
 
         driver.navigate().to("https://www.danfoss.com/en/");
+        WebElement searchText = driver.findElement(By.xpath ("//*[contains(text(),'Explore Danfoss Product Store')]"));
     }
 }
