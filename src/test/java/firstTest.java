@@ -35,4 +35,18 @@ public class firstTest {
         driver.quit();
     }
 
+    @Test
+    public void Test3() {
+        //open chrome
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        //scenario of test
+        driver.navigate().to("https://www.danfoss.com/en/");
+        driver.manage().window().setSize(new Dimension(480, 480));
+        boolean searchText = driver.findElement(By.xpath ("//*[contains(text(),'Quick links')]")).isDisplayed();
+        assert(!searchText);
+        //quit chrome
+        driver.quit();
+    }
+
 }
