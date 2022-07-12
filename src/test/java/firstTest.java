@@ -45,7 +45,7 @@ public class firstTest {
         driver.manage().window().setSize(new Dimension(480, 480));
         boolean searchText = driver.findElement(By.xpath ("//*[contains(text(),'Quick links')]")).isDisplayed();
         assert(!searchText);
-        //quit chrome
+        //quit chrome  
         driver.quit();
     }
 
