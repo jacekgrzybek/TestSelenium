@@ -32,7 +32,7 @@ public class firstTest {
         WebElement searchText = driver.findElement(By.xpath ("//*[contains(text(),'Alsense IoT cloud and monitoring')]"));
         WebElement searchText2 = driver.findElement(By.xpath ("//*[contains(text(),'.pdf')]"));
         //quit chrome
-        driver.quit();
+        driver.quit(); //TEST TEST
     }
 
     @Test
